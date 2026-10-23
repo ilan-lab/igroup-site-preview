@@ -36,6 +36,7 @@ PAGES={
 'product__ultrawave-lgt-2620.html':('shock','מכשיר גלי הלם ממוקדים לקליניקה'),
 'product__powershocker-lgt-2500s-plus.html':(None,'מכשיר גלי הלם רדיאלי לקליניקה'),
 'product__spine-mt.html':('spine','מכשיר דקומפרסיה ממוחשבת לעמוד השדרה'),
+'product__spine-mt-core.html':('spine','מכשיר שיקום ודקומפרסיה לעמוד השדרה'),
 'product__tera-master.html':(None,'מערכת דקומפרסיה ותרפיה משולבת לקליניקה'),
 'product__robotic-bed.html':(None,'מיטה רובוטית לטיפולי שיקום'),
 'product__biomag-lumina.html':('bio','מכשיר מגנטותרפיה פולסטית לקליניקה ולבית'),
