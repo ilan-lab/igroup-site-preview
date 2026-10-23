@@ -6,8 +6,14 @@ SITE='https://i-group.co.il'
 IMAGE_BASE=os.environ.get('IMAGE_BASE','https://ilan-lab.github.io/igroup-site-preview')  # where /og/ is hosted
 PHONE_DISPLAY='054-900-7723'; PHONE_INTL='+972-54-900-7723'
 d=json.load(open('tools/seo/pages.json'))
+SKIP=set(os.environ.get('SKIP','product__spine-mt-core.html').split(','))  # files another worker owns
+ORG={"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":SITE+"/#org","name":"I-Group Medical Tech","alternateName":["איי גרופ","I-Group Medical Solutions"],
+     "legalName":"I-GROUP MEDICAL TEC LTD","taxID":"517296117","url":SITE+"/","logo":IMAGE_BASE+"/assets/img/78c8016e_065b79d68_I-GroupNewLogo2.png","telephone":PHONE_INTL,
+     "address":{"@type":"PostalAddress","streetAddress":"מאיר אריאל 6, בניין אינטרגאמא","addressLocality":"כפר נטר","addressCountry":"IL"},
+     "description":"שיווק, ייבוא והפצה של טכנולוגיות רפואיות מתקדמות למרפאות ומכוני שיקום בישראל."}
 e=lambda s:html.escape(s,quote=True)
 for f,v in d.items():
+    if f in SKIP: continue
     h=open(f,encoding='utf-8').read()
     h=re.sub(r'<!-- seo:start -->.*?<!-- seo:end -->\n?','',h,flags=re.S)
     h=re.sub(r'<title>.*?</title>','',h,flags=re.S)
@@ -15,11 +21,11 @@ for f,v in d.items():
     h=re.sub(r'<link\b[^>]*\brel="canonical"[^>]*>\n?','',h)
     h=h.replace('Biomog','Biomag').replace('054-502-0506',PHONE_DISPLAY).replace('0545020506','0549007723')
     route='/' if f=='index.html' else '/'+f[:-5].replace('__','/')
-    url=SITE+route; img=IMAGE_BASE+'/'+v['og']; prod=v.get('p')
+    url=SITE+route; canon=SITE+('/'+v['canon'][:-5].replace('__','/') if v.get('canon') else route); img=IMAGE_BASE+'/'+v['og']; prod=v.get('p')
     alt=(v.get('name') or 'I-Group Medical Tech')+' – איי גרופ'
     robots='index,follow' if INDEXABLE and not v.get('nf') and f!='consultations.html' else 'noindex,nofollow'
     m=[f'<title>{e(v["t"])}</title>',f'<meta name="description" content="{e(v["d"])}">',
-       f'<link rel="canonical" href="{url}">',f'<meta name="robots" content="{robots}">',
+       f'<link rel="canonical" href="{canon}">',f'<meta name="robots" content="{robots}">',
        f'<meta property="og:type" content="{"product" if prod else "website"}">',
        f'<meta property="og:title" content="{e(v["t"])}">',f'<meta property="og:description" content="{e(v["d"])}">',
        f'<meta property="og:url" content="{url}">','<meta property="og:site_name" content="I-Group Medical Tech">',
@@ -34,6 +40,10 @@ for f,v in d.items():
             "offers":{"@type":"Offer","url":url,"availability":"https://schema.org/InStock","priceCurrency":"ILS",
                       "seller":{"@type":"Organization","name":"I-Group Medical Tech","telephone":PHONE_INTL,"url":SITE}}}
         m.append('<script type="application/ld+json">'+json.dumps(ld,ensure_ascii=False)+'</script>')
+    if f=='index.html': m.append('<script type="application/ld+json">'+json.dumps(ORG,ensure_ascii=False)+'</script>')
+    elif not v.get('nf'):
+        crumbs=[{"@type":"ListItem","position":1,"name":"דף הבית","item":SITE+"/"},{"@type":"ListItem","position":2,"name":v.get('name') or v['t'].split(' – ')[0].split(' | ')[0],"item":url}]
+        m.append('<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":crumbs},ensure_ascii=False)+'</script>')
     h=h.replace('</head>','<!-- seo:start -->\n'+'\n'.join(m)+'\n<!-- seo:end -->\n</head>',1)
     open(f,'w',encoding='utf-8').write(h)
 print('done; INDEXABLE =',INDEXABLE)

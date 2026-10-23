@@ -1,0 +1,61 @@
+old_path,new_path,status,note
+/,/,200 (same path),served by index.html – in live sitemap
+/accessibility,/accessibility,200 (same path),served by accessibility.html – in live sitemap
+/address,/address,200 (same path),served by address.html – in live sitemap
+/cancellation,/cancellation,200 (same path),served by cancellation.html – in live sitemap
+/consultations,/consultations,200 (same path),served by consultations.html – in live sitemap
+/cryotherapy,/cryotherapy,200 (same path),served by cryotherapy.html – in live sitemap
+/kin,/kin,200 (same path),served by kin.html – in live sitemap
+/kin/product/5100d-config-ii,/kin/product/5100d-config-ii,200 (same path),served by kin__product__5100d-config-ii.html – found via site links
+/kin/product/5100d,/kin/product/5100d,200 (same path),served by kin__product__5100d.html – found via site links
+/kin/product/5100p,/kin/product/5100p,200 (same path),served by kin__product__5100p.html – found via site links
+/phone-consultation,/phone-consultation,200 (same path),served by phone-consultation.html – in live sitemap
+/privacy,/privacy,200 (same path),served by privacy.html – in live sitemap
+/product/biomag-lumina,/product/biomag-lumina,200 (same path),served by product__biomag-lumina.html – in live sitemap
+/product/body-composition,/clinic-equipment,301,"old product URL renders ""product not found"" on Base44; merge into replacement"
+/product/cryotherapy,/cryotherapy,301,"old product URL renders ""product not found"" on Base44; merge into replacement"
+/product/focuswave,/product/ultrawave-lgt-2620,301,"old product URL renders ""product not found"" on Base44; merge into replacement"
+/product/lgt-2410s,/product/lgt-2410s,200 (same path),served by product__lgt-2410s.html – found via site links
+/product/powershocker-lgt-2500s-plus,/product/powershocker-lgt-2500s-plus,200 (same path),served by product__powershocker-lgt-2500s-plus.html – found via site links
+/product/rehamoto-5100d,/kin/product/5100d,301,"old product URL renders ""product not found"" on Base44; merge into replacement"
+/product/rehamoto-5100p,/product/rehamoto-5100p,200 (same path),served by product__rehamoto-5100p.html – found via site links
+/product/rj-laser,/clinic-equipment,301,"old product URL renders ""product not found"" on Base44; merge into replacement"
+/product/robotic-bed,/product/robotic-bed,200 (same path),served by product__robotic-bed.html – found via site links
+/product/spine-mt-core,/product/spine-mt-core,200 (same path),served by product__spine-mt-core.html – found via site links
+/product/spine-mt,/product/spine-mt,200 (same path),served by product__spine-mt.html – found via site links
+/product/tera-master,/product/tera-master,200 (same path),served by product__tera-master.html – found via site links
+/product/ultrasound,/product/ultrasound,200 (same path),served by product__ultrasound.html – found via site links
+/product/ultrawave-lgt-2620,/product/ultrawave-lgt-2620,200 (same path),served by product__ultrawave-lgt-2620.html – found via site links
+/terms,/terms,200 (same path),served by terms.html – in live sitemap
+/thank-you/consultation,/thank-you/consultation,200 (same path),served by thank-you__consultation.html – in live sitemap
+/thank-you/contact,/thank-you/contact,200 (same path),served by thank-you__contact.html – in live sitemap
+/thank-you/demo,/thank-you/demo,200 (same path),served by thank-you__demo.html – in live sitemap
+/thank-you/newsletter,/thank-you/newsletter,200 (same path),served by thank-you__newsletter.html – in live sitemap
+/vet,/vet,200 (same path),served by vet.html – in live sitemap
+/shockwave-therapy,/shockwave-therapy,200 (same path),served by shockwave-therapy.html – found via site links
+/spinal-decompression,/spinal-decompression,200 (same path),served by spinal-decompression.html – found via site links
+/magnetotherapy,/magnetotherapy,200 (same path),served by magnetotherapy.html – found via site links
+/clinic-equipment,/clinic-equipment,200 (same path),served by clinic-equipment.html – found via site links
+/index,/,301,common legacy alias
+/home,/,301,common legacy alias
+/product/focuswave-lgt-2620,/product/ultrawave-lgt-2620,301,defensive alias (optional)
+/shockwave,/shockwave-therapy,301,defensive alias (optional)
+/decompression,/spinal-decompression,301,defensive alias (optional)
+/shock,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/back,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/sport,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/lazer,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/ultra,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/brain,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/women,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/wond,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/manual,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/3age,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/oxygen,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/yoga,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/trial,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/testimonials,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/book,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/consult-booking,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/consult-instrumentation,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301
+/docs,,REVIEW,route found only in base44_backup_20261001.zip app.js – that bundle looks like a different Base44 app (clinic booking); not on live i-group sitemap. Confirm before adding a 301

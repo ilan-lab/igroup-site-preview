@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+Sitemap: https://i-group.co.il/sitemap.xml

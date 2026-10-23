@@ -1,7 +1,7 @@
 {
  "index.html": {
-  "t": "איי גרופ – טכנולוגיות רפואיות מתקדמות לשיקום ולטיפול בכאב",
-  "d": "איי גרופ מייבאת ומפיצה בישראל מכשור רפואי מתקדם לקליניקות: גלי הלם, דקומפרסיה, מגנטותרפיה, קריותרפיה ושיקום תנועה. תיאום הדגמה וייעוץ מקצועי.",
+  "t": "מכשור רפואי לקליניקות – גלי הלם, דקומפרסיה ומגנטותרפיה | איי גרופ",
+  "d": "איי גרופ מייבאת ומפיצה בישראל מכשור רפואי לקליניקות פיזיותרפיה ושיקום: מכשירי גלי הלם, דקומפרסיה לעמוד השדרה, מגנטותרפיה Biomag וקריותרפיה. ייעוץ והדגמה.",
   "og": "og/default.jpg"
  },
  "accessibility.html": {
@@ -25,8 +25,8 @@
   "og": "og/default.jpg"
  },
  "cryotherapy.html": {
-  "t": "קריותרפיה רפואית לקליניקה – מכשיר LGT-2410S | איי גרופ",
-  "d": "מערכת הקריותרפיה הממוקדת LGT-2410S לקליניקות פיזיותרפיה, ספורט ואסתטיקה: קירור מבוקר להפחתת כאב ודלקת ולהאצת החלמה. פרטים טכניים, סרטונים ותיאום הדגמה.",
+  "t": "מכשיר קריותרפיה רפואית לקליניקה – LGT-2410S CO₂ | איי גרופ",
+  "d": "LGT-2410S: מכשיר קריותרפיה ממוקדת CO₂ ב-‎-78°C לקליניקות פיזיותרפיה ורפואת ספורט – קירור מהיר ומבוקר עם ניטור טמפרטורת עור. מפרט, שאלות נפוצות והדגמה.",
   "og": "og/default.jpg"
  },
  "kin.html": {
@@ -69,8 +69,8 @@
   "og": "og/default.jpg"
  },
  "product__biomag-lumina.html": {
-  "t": "מכשיר מגנטותרפיה פולסטית 3D – Biomag Lumina 3D-e | איי גרופ",
-  "d": "Biomag Lumina 3D-e: מערכת מגנטותרפיה פולסטית תלת-ממדית פטנטית לטיפול בכאב, דלקות ופציעות ולהאצת ריפוי רקמות, לקליניקות ומרכזי שיקום. מפרט ותיאום הדגמה.",
+  "t": "מכשיר מגנטותרפיה Biomag Lumina 3D-e לקליניקה ולבית | איי גרופ",
+  "d": "Biomag Lumina 3D-e: מכשיר מגנטותרפיה פולסטית (PEMF) עם טכנולוגיית 3D פטנטית ו-4 ערוצים, לקליניקות ולשימוש ביתי. מיובא על ידי איי גרופ. שאלות נפוצות והדגמה.",
   "p": 1,
   "name": "Biomag Lumina 3D-e",
   "img": "assets/img/76237b2f_cc08ffaeb_magnetoerapeuticke-lehatko-1920x1080.jpg",
@@ -82,7 +82,8 @@
   "p": 1,
   "name": "Body Composition",
   "nf": 1,
-  "og": "og/default.jpg"
+  "og": "og/default.jpg",
+  "canon": "clinic-equipment.html"
  },
  "product__cryotherapy.html": {
   "t": "מכשירי קריותרפיה לקליניקה – קירור רפואי ממוקד | איי גרופ",
@@ -91,7 +92,8 @@
   "name": "קריותרפיה",
   "nf": 1,
   "img": "assets/img/5e8c0cd2_cryotherapy-device-LGT-2410S.png",
-  "og": "og/product-cryotherapy.jpg"
+  "og": "og/product-cryotherapy.jpg",
+  "canon": "cryotherapy.html"
  },
  "product__focuswave.html": {
   "t": "מכשיר גלי הלם ממוקדים לקליניקה – FocusWave | איי גרופ",
@@ -99,7 +101,8 @@
   "p": 1,
   "name": "FocusWave",
   "nf": 1,
-  "og": "og/default.jpg"
+  "og": "og/default.jpg",
+  "canon": "product__ultrawave-lgt-2620.html"
  },
  "product__lgt-2410s.html": {
   "t": "מכשיר קריותרפיה ממוקדת לקליניקה – LGT-2410S | איי גרופ",
@@ -110,8 +113,8 @@
   "og": "og/product-lgt-2410s.jpg"
  },
  "product__powershocker-lgt-2500s-plus.html": {
-  "t": "מכשיר גלי הלם לקליניקה – PowerShocker LGT-2500S | איי גרופ",
-  "d": "PowerShocker LGT-2500S PLUS: מכשיר גלי הלם רדיאליים חוץ-גופיים לטיפול בדורבן, טנדיניטיס, כאבי כתף וברך ונקודות טריגר, לקליניקות. מפרט ותיאום הדגמה.",
+  "t": "מכשיר גלי הלם רדיאלי לקליניקה – PowerShocker LGT-2500S | איי גרופ",
+  "d": "PowerShocker LGT-2500S PLUS: מכשיר גלי הלם רדיאלי דו-ערוצי לקליניקות, לחץ 1–5 בר, תדר 1–22 הרץ ומסך מגע 7\". לדורבן, גיד אכילס, כתף ומרפק טניס. הדגמה והצעת מחיר.",
   "p": 1,
   "name": "PowerShocker LGT-2500S PLUS",
   "img": "tools/seo/src/professional-shockwave-therapy-machine-lgt-2500s.jpg",
@@ -124,7 +127,8 @@
   "name": "RehaMoto 5100D",
   "nf": 1,
   "img": "assets/img/45251b9b_active-passive-trainer-apt-rehamoto-lgt-5100d.png",
-  "og": "og/product-rehamoto-5100d.jpg"
+  "og": "og/product-rehamoto-5100d.jpg",
+  "canon": "kin__product__5100d.html"
  },
  "product__rehamoto-5100p.html": {
   "t": "מאמן אקטיבי-פסיבי לגפיים – RehaMoto LGT-5100P | איי גרופ",
@@ -140,7 +144,8 @@
   "p": 1,
   "name": "RJ Laser",
   "nf": 1,
-  "og": "og/default.jpg"
+  "og": "og/default.jpg",
+  "canon": "clinic-equipment.html"
  },
  "product__robotic-bed.html": {
   "t": "מיטה רובוטית טיפולית לקליניקה ולמרכזי שיקום | איי גרופ",
@@ -159,15 +164,15 @@
  },
  "product__spine-mt.html": {
   "t": "מכשיר דקומפרסיה לעמוד השדרה – Spine-MT | איי גרופ",
-  "d": "Spine-MT: מערכת דקומפרסיה חכמה לעמוד השדרה לטיפול לא פולשני בפריצות ובלטי דיסק, כאבי גב תחתון וצוואר וסיאטיקה. מפרט, עשרות סרטונים ותיאום הדגמה.",
+  "d": "Spine-MT: מערכת דקומפרסיה ממוחשבת לעמוד השדרה לקליניקות – טיפול שמרני בפריצת ובלט דיסק וכאבי גב, עם שליטה דיגיטלית בזוויות ובכוחות. שאלות נפוצות והדגמה.",
   "p": 1,
   "name": "Spine-MT",
   "img": "tools/seo/src/00a2e304c_1200px900px4on3.png",
   "og": "og/product-spine-mt.jpg"
  },
  "product__tera-master.html": {
-  "t": "מערכת תרפיה משולבת לקליניקה – Therapy Master | איי גרופ",
-  "d": "Therapy Master: מערכת תרפיה משולבת מתקדמת המאחדת מספר טכנולוגיות טיפול במכשיר אחד, לטיפול בכאב ולשיקום בקליניקות פיזיותרפיה. מפרט, סרטונים ותיאום הדגמה.",
+  "t": "Therapy Master – מערכת דקומפרסיה ותרפיה משולבת | איי גרופ",
+  "d": "Therapy Master (TheraMaster): מערכת תרפיה משולבת לקליניקות, כולל דקומפרסיה לעמוד השדרה, בעלות משתלמת והתקנה פשוטה. ברושור, מפרט, טבלת השוואת דגמים ותיאום הדגמה.",
   "p": 1,
   "name": "Therapy Master",
   "img": "tools/seo/src/cd4a8a2e1_4on3aspectratio.png",
@@ -183,7 +188,7 @@
  },
  "product__ultrawave-lgt-2620.html": {
   "t": "מכשיר גלי הלם ממוקדים לקליניקה – Ultrawave LGT-2620 | איי גרופ",
-  "d": "Ultrawave LGT-2620: מכשיר גלי הלם אלקטרומגנטיים ממוקדים לחדירה עמוקה, לטיפול בכאבים כרוניים, דורבן והסתיידויות ולשיקום ספורטאים. מפרט ותיאום הדגמה.",
+  "d": "Ultrawave LGT-2620 (FocusWave): מכשיר גלי הלם אלקטרומגנטיים ממוקדים לקליניקות פיזיותרפיה, אורתופדיה ורפואת ספורט – אנרגיה בנקודת מוקד עמוקה. שאלות נפוצות והדגמה.",
   "p": 1,
   "name": "Ultrawave LGT-2620",
   "img": "tools/seo/src/3075a8a23_Screenshot_20260608_234511_Chrome.jpg",
@@ -220,5 +225,37 @@
   "img": "assets/img/c9042b7b_ab09e6b7c_images1.jpg",
   "name": "Biomag Vet",
   "og": "og/vet.jpg"
+ },
+ "shockwave-therapy.html": {
+  "t": "טיפול בגלי הלם – מכשירים, התוויות ופרוטוקולים לקליניקה | איי גרופ",
+  "d": "מדריך לטיפול בגלי הלם לקליניקות: ממוקדים מול רדיאליים, דורבן, הסתיידות בכתף, מרפק טניס, מספר טיפולים ונגד-התוויות. מכשירי Ultrawave ו-PowerShocker.",
+  "name": "טיפול בגלי הלם",
+  "img": "tools/seo/src/3075a8a23_Screenshot_20260608_234511_Chrome.jpg",
+  "og": "og/shockwave-therapy.jpg",
+  "faq": "shock"
+ },
+ "spinal-decompression.html": {
+  "t": "דקומפרסיה לעמוד השדרה – טיפול שמרני בפריצת דיסק | איי גרופ",
+  "d": "דקומפרסיה ממוחשבת לעמוד השדרה: איך היא שונה ממתיחה, למי היא מתאימה, משך סדרת טיפולים ונגד-התוויות. מערכות Spine-MT, Spine MT Core ו-Therapy Master לקליניקות.",
+  "name": "דקומפרסיה לעמוד השדרה",
+  "img": "tools/seo/src/00a2e304c_1200px900px4on3.png",
+  "og": "og/spinal-decompression.jpg",
+  "faq": "spine"
+ },
+ "magnetotherapy.html": {
+  "t": "מגנטותרפיה פולסטית PEMF – מכשירי Biomag לקליניקה ולבית | איי גרופ",
+  "d": "מגנטותרפיה פולסטית (PEMF): איך היא עובדת, טכנולוגיית ה-3D של Biomag, שימוש בקליניקה, בבית ובווטרינריה, ונגד-התוויות. Biomag Lumina 3D-e מיובא על ידי איי גרופ.",
+  "name": "מגנטותרפיה פולסטית",
+  "img": "assets/img/76237b2f_cc08ffaeb_magnetoerapeuticke-lehatko-1920x1080.jpg",
+  "og": "og/magnetotherapy.jpg",
+  "faq": "bio"
+ },
+ "clinic-equipment.html": {
+  "t": "מכשור רפואי לקליניקות פיזיותרפיה, שיקום וכאב | איי גרופ",
+  "d": "כל המכשירים של איי גרופ לקליניקות בישראל: גלי הלם, דקומפרסיה לעמוד השדרה, מגנטותרפיה, קריותרפיה, אולטרסאונד טיפולי ומאמני שיקום. ייעוץ, הדגמה והצעת מחיר.",
+  "name": "מכשירים לקליניקות",
+  "img": "tools/seo/src/professional-shockwave-therapy-machine-lgt-2500s.jpg",
+  "og": "og/clinic-equipment.jpg",
+  "faq": "gen"
  }
 }
