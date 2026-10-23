@@ -34,15 +34,17 @@
   }
   function ratio(a) { var p = String(a || '16/9').split('/'); var r = (+p[0]) / (+p[1]); return r > 0 ? r : 16 / 9; }
 
-  /* ---- video card grids: exactly 2 per row (tablet/desktop), 1 on small phones ---- */
-  var gcss = '.ig-vgrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important;max-width:1100px;margin-inline:auto}' +
-    '@media (max-width:479px){.ig-vgrid{grid-template-columns:1fr!important;gap:16px!important}}' +
-    '.ig-vgrid>*{min-width:0}.ig-vgrid [data-video-src]{display:flex;flex-direction:column;width:100%;height:100%}' +
-    '.ig-vthumb{position:relative;aspect-ratio:16/9!important;overflow:hidden;background:#0b1624!important}' +
+  /* ---- video card grids: exactly 1 per row, large, centered (max 900px) ---- */
+  var gcss = '.ig-vgrid{display:grid!important;grid-template-columns:1fr!important;gap:32px!important;max-width:900px;margin-inline:auto}' +
+    '@media (max-width:640px){.ig-vgrid{gap:20px!important}}' +
+    '.ig-vgrid>*{min-width:0}.ig-vgrid [data-video-src]{display:flex;flex-direction:column;width:100%}' +
+    '.ig-vgrid .ig-vthumb,.ig-vgrid [data-video-src].aspect-video{position:relative;aspect-ratio:16/9!important;overflow:hidden;background:#0b1624!important}' +
     '.ig-vthumb>img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover}' +
+    '.ig-vgrid .ig-vthumb.ig-vert{aspect-ratio:auto!important;height:min(80vh,calc(min(900px,100vw - 32px) * 16 / 9))}' +
     '.ig-vthumb.ig-vert>img{object-fit:contain}' +
     '.ig-vthumb.ig-vert::before{content:"";position:absolute;inset:-20px;background:var(--ig-bg) center/cover;filter:blur(18px) brightness(.55);transform:scale(1.1)}' +
-    '.ig-vthumb>div{z-index:2}';
+    '.ig-vthumb>div{z-index:2}.ig-vgrid [data-video-src] p{font-size:16px}' +
+    '.ig-vgrid .w-14.h-14{width:72px;height:72px;opacity:.95!important}';
   var gs = document.createElement('style'); gs.textContent = gcss; document.head.appendChild(gs);
   function grids() {
     document.querySelectorAll('[data-video-src]').forEach(function (b) {
