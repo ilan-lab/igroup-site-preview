@@ -9,7 +9,7 @@ d=json.load(open('tools/seo/pages.json'))
 SKIP=set(os.environ.get('SKIP','product__spine-mt-core.html').split(','))  # files another worker owns
 ORG={"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":SITE+"/#org","name":"I-Group Medical Tech","alternateName":["איי גרופ","I-Group Medical Solutions"],
      "legalName":"I-GROUP MEDICAL TEC LTD","taxID":"517296117","url":SITE+"/","logo":IMAGE_BASE+"/assets/img/78c8016e_065b79d68_I-GroupNewLogo2.png","telephone":PHONE_INTL,
-     "address":{"@type":"PostalAddress","streetAddress":"מאיר אריאל 6, בניין אינטרגאמא","addressLocality":"כפר נטר","addressCountry":"IL"},
+     "address":{"@type":"PostalAddress","streetAddress":"מאיר אריאל 6","addressLocality":"נתניה","addressCountry":"IL"},
      "description":"שיווק, ייבוא והפצה של טכנולוגיות רפואיות מתקדמות למרפאות ומכוני שיקום בישראל."}
 e=lambda s:html.escape(s,quote=True)
 for f,v in d.items():
@@ -19,7 +19,7 @@ for f,v in d.items():
     h=re.sub(r'<title>.*?</title>','',h,flags=re.S)
     h=re.sub(r'<meta\b[^>]*\b(?:name|property)="(?:description|robots|og:[^"]+|twitter:[^"]+)"[^>]*>\n?','',h)
     h=re.sub(r'<link\b[^>]*\brel="canonical"[^>]*>\n?','',h)
-    h=h.replace('Biomog','Biomag').replace('054-502-0506',PHONE_DISPLAY).replace('0545020506','0549007723')
+    h=h.replace('Biomog','Biomag').replace('054-900-7723',PHONE_DISPLAY).replace('0549007723','0549007723')
     route='/' if f=='index.html' else '/'+f[:-5].replace('__','/')
     url=SITE+route; canon=SITE+('/'+v['canon'][:-5].replace('__','/') if v.get('canon') else route); img=IMAGE_BASE+'/'+v['og']; prod=v.get('p')
     alt=(v.get('name') or 'I-Group Medical Tech')+' – איי גרופ'
