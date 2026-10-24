@@ -26,6 +26,8 @@ def fix(h, is_home):
                    'class="', 'class="' + (re.search(r'class="([^"]*)"', m.group(1)).group(1) + ' ' if re.search(r'class="([^"]*)"', m.group(1)) else ''), 1),
                h, flags=re.S)
     h = re.sub(r'<button([^>]*)>((?:(?!</?button).)*?)</button>', btn, h, flags=re.S)
+    # remove the old right-side floating WhatsApp widget (keep only our left #wa-float)
+    h = re.sub(r'<div class="fixed bottom-4 right-4[^"]*"[^>]*>\s*<button[^>]*bg-green-500[^>]*>.*?</button>\s*</div>', '', h, flags=re.S)
     if 'id="wa-float"' not in h and '</body>' in h:
         h = h.replace('</body>', WA + '</body>', 1)
     return h
