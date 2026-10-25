@@ -147,7 +147,10 @@ input::placeholder, textarea::placeholder { color: hsl(218 12% 42%); opacity: 1;
 /* ---------- Responsive overflow ---------- */
 img, video, svg, iframe { max-width: 100%; }
 img { height: auto; }
-img.object-cover, img.object-contain, img[class*="h-"] { height: revert-layer; }
+/* Image scale fix: utilities (.h-full, .h-24...) already outrank `img{height:auto}`;
+   the old `revert-layer` rule fell back to the HTML height attribute (style0.css is unlayered),
+   stretching images past their containers and cropping them. */
+a.group [class*="aspect-"] > img.object-cover { object-fit: contain; }
 table { display: block; max-width: 100%; overflow-x: auto; }
 pre, code { overflow-x: auto; max-width: 100%; }
 a, h1, h2, h3, h4, li, td { overflow-wrap: anywhere; }
