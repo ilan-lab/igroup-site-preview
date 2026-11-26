@@ -200,3 +200,9 @@ img { -webkit-user-drag: none; }
 .imp-lang-menu button:hover{background:#f1f5f9}
 body{top:0!important}.goog-te-banner-frame,.skiptranslate>iframe,#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
 font>font{background:none!important;box-shadow:none!important}
+/* nav: keep links on one line when the link row gets crowded (added 2026-11-26) */
+nav .hidden.md\:flex>a{white-space:nowrap}
+@media (max-width:1279px){nav .hidden.md\:flex>a{padding-left:.45rem;padding-right:.45rem;font-size:.8rem}}
+@media (max-width:959px){nav .hidden.md\:flex>a{padding-left:.3rem;padding-right:.3rem;font-size:.72rem}}
+nav a:has(>img){flex-shrink:0}
+@media (max-width:899px){nav .hidden.md\:flex{gap:0}nav .hidden.md\:flex>a{padding-left:.25rem;padding-right:.25rem;font-size:.68rem}}
