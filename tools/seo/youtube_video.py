@@ -1,7 +1,7 @@
-"""Shared YouTube embed + VideoObject for the focused-vs-radial film (iB6AslQP-DE)."""
+"""Shared YouTube embed + VideoObject for the focused-vs-radial film (fJ9p71K2Vc0)."""
 import json
 
-VIDEO_ID = 'iB6AslQP-DE'
+VIDEO_ID = 'fJ9p71K2Vc0'
 VIDEO_NAME = 'מה ההבדל בין גלי הלם ממוקדים לרדיאליים'
 VIDEO_HEADING = 'צפו: ההבדל בין גלי הלם ממוקדים לרדיאליים'
 VIDEO_DESC = (

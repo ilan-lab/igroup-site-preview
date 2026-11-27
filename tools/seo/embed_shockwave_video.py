@@ -80,7 +80,7 @@ def patch(path, fn):
     assert re.search(r'<title>(.*?)</title>', html, re.S).group(1) == original_title
     assert re.search(r'<meta name="description" content="([^"]*)">', html).group(1) == original_desc
     assert re.search(r'<meta property="og:image" content="([^"]*)">', html).group(1) == original_og
-    assert 'youtube-nocookie.com/embed/iB6AslQP-DE' in html
+    assert 'youtube-nocookie.com/embed/fJ9p71K2Vc0' in html
     assert '"@type": "VideoObject"' in html or '"@type":"VideoObject"' in html
     assert html.count('<title>') == 1
     p.write_text(html, encoding='utf-8')
