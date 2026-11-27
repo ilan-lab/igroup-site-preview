@@ -11,7 +11,8 @@ ORG={"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@
      "legalName":"I-GROUP MEDICAL TEC LTD","taxID":"517296117","url":SITE+"/","logo":IMAGE_BASE+"/assets/img/78c8016e_065b79d68_I-GroupNewLogo2.png","telephone":PHONE_INTL,
      "address":{"@type":"PostalAddress","streetAddress":"מאיר אריאל 6","addressLocality":"נתניה","addressCountry":"IL"},
      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"18:00"}],
-     "description":"שיווק, ייבוא והפצה של טכנולוגיות רפואיות מתקדמות למרפאות ומכוני שיקום בישראל."}
+     "description":"שיווק, ייבוא והפצה של טכנולוגיות רפואיות מתקדמות למרפאות ומכוני שיקום בישראל.",
+     "sameAs":["https://www.youtube.com/channel/UCxpGFxC0ng4daQO-TmE-28Q", "https://www.facebook.com/igroupisrael", "https://www.instagram.com/i_group_medical/", "https://www.tiktok.com/@i_group_medical"]}
 e=lambda s:html.escape(s,quote=True)
 for f,v in d.items():
     if f in SKIP: continue
@@ -36,8 +37,9 @@ for f,v in d.items():
        f'<meta name="twitter:title" content="{e(v["t"])}">',f'<meta name="twitter:description" content="{e(v["d"])}">',
        f'<meta name="twitter:image" content="{img}">']
     if prod:
-        ld={"@context":"https://schema.org","@type":"Product","name":v['name'],"description":v['d'],"image":img,"url":url,
+        ld={"@context":"https://schema.org","@type":["Product","MedicalDevice"],"name":v['name'],"description":v['d'],"image":img,"url":url,
             "brand":{"@type":"Brand","name":v['name'].split()[0]},
+            "seller":{"@type":"Organization","name":"I-Group Medical Tech","telephone":PHONE_INTL,"url":SITE+"/"},
             "offers":{"@type":"Offer","url":url,"availability":"https://schema.org/InStock","priceCurrency":"ILS",
                       "seller":{"@type":"Organization","name":"I-Group Medical Tech","telephone":PHONE_INTL,"url":SITE}}}
         m.append('<script type="application/ld+json">'+json.dumps(ld,ensure_ascii=False)+'</script>')

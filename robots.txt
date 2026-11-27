@@ -3,4 +3,34 @@ Allow: /
 Disallow: /consultations
 Disallow: /thank-you/
 
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /consultations
+Disallow: /thank-you/
+
 Sitemap: https://i-group.co.il/sitemap.xml
