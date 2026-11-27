@@ -10,6 +10,7 @@ SKIP=set(os.environ.get('SKIP','product__spine-mt-core.html').split(','))  # fil
 ORG={"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":SITE+"/#org","name":"I-Group Medical Tech","alternateName":["איי גרופ","I-Group Medical Solutions"],
      "legalName":"I-GROUP MEDICAL TEC LTD","taxID":"517296117","url":SITE+"/","logo":IMAGE_BASE+"/assets/img/78c8016e_065b79d68_I-GroupNewLogo2.png","telephone":PHONE_INTL,
      "address":{"@type":"PostalAddress","streetAddress":"מאיר אריאל 6","addressLocality":"נתניה","addressCountry":"IL"},
+     "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"18:00"}],
      "description":"שיווק, ייבוא והפצה של טכנולוגיות רפואיות מתקדמות למרפאות ומכוני שיקום בישראל."}
 e=lambda s:html.escape(s,quote=True)
 for f,v in d.items():
