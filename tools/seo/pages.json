@@ -167,7 +167,7 @@
   "d": "Spine-MT: מערכת דקומפרסיה ממוחשבת לעמוד השדרה לקליניקות – טיפול שמרני בפריצת ובלט דיסק וכאבי גב, עם שליטה דיגיטלית בזוויות ובכוחות. שאלות נפוצות והדגמה.",
   "p": 1,
   "name": "Spine-MT",
-  "img": "tools/seo/src/00a2e304c_1200px900px4on3.png",
+  "img": "assets/img/k2-spine-mt-decompression.webp",
   "og": "og/product-spine-mt.jpg"
  },
  "product__tera-master.html": {
@@ -238,7 +238,7 @@
   "t": "דקומפרסיה לעמוד השדרה – טיפול שמרני בפריצת דיסק | איי גרופ",
   "d": "דקומפרסיה ממוחשבת לעמוד השדרה: איך היא שונה ממתיחה, למי היא מתאימה, משך סדרת טיפולים ונגד-התוויות. מערכות Spine-MT, Spine MT Core ו-Therapy Master לקליניקות.",
   "name": "דקומפרסיה לעמוד השדרה",
-  "img": "tools/seo/src/00a2e304c_1200px900px4on3.png",
+  "img": "assets/img/k2-spine-mt-decompression.webp",
   "og": "og/spinal-decompression.jpg",
   "faq": "spine"
  },
