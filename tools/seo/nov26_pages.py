@@ -3,6 +3,7 @@ Run from repo root: python3 tools/seo/nov26_pages.py"""
 import json, re, html, sys
 sys.path.insert(0,'tools/seo')
 from make_og import product as og_product
+from youtube_video import video_ld, video_section
 BASE='https://i-group.co.il'
 C='style="color: rgb(11, 94, 215);"'
 tpl=open('product/ultrawave-lgt-2620.html',encoding='utf-8').read()
@@ -100,6 +101,7 @@ def main():
     body=hero('מכשירי גלי הלם לקליניקה','ממוקדים ורדיאליים – השוואה ובחירה',
       'איי גרופ מייבאת ומפיצה בישראל מכשירי גלי הלם (ESWT) מסדרת LGT של היצרן Longest – גם מכשירי גלי הלם ממוקדים אלקטרומגנטיים וגם מכשיר גלי הלם רדיאלי פנאומטי. בעמוד זה תמצאו השוואה בין הדגמים, למי מתאים כל אחד, ומה כדאי לבדוק לפני שבוחרים מכשיר גלי הלם לקליניקת פיזיותרפיה, אורתופדיה או רפואת ספורט.',
       IMG_UW,'מכשירי גלי הלם לקליניקה – Ultrawave, LGT-2520GP ו-PowerShocker')
+    body+=video_section(alt=True)
     body+=sec('הדגמים שלנו',grid([
       card('Ultrawave LGT-2620 – גלי הלם ממוקדים',small('מחולל אלקטרומגנטי שמרכז את האנרגיה בנקודת מוקד בעומק הרקמה – לאזורים עמוקים ולטיפול מדויק בנקודה.'),'/product/ultrawave-lgt-2620',IMG_UW,'Ultrawave LGT-2620 מכשיר גלי הלם ממוקדים'),
       card('LGT-2520GP – גלי הלם ממוקדים (חדש)',small('גלי הלם אלקטרומגנטיים ממוקדים לטיפול מדויק בעומק הרקמה, עם דגש על עמידות: 4 מיליון פולסים ממוקדים.'),'https://focused.i-group.co.il/',IMG_GP,'LGT-2520GP מכשיר גלי הלם ממוקדים'),
@@ -127,7 +129,7 @@ def main():
     body+=disclaimer('המידע בעמוד מיועד לאנשי מקצוע בתחום הבריאות ואינו מהווה ייעוץ רפואי. ההחלטה על טיפול ועל פרוטוקול הטיפול היא באחריות המטפל המוסמך.')
     body+=related([('טיפול בגלי הלם – מדריך לקליניקות','/shockwave-therapy'),('Ultrawave LGT-2620','/product/ultrawave-lgt-2620'),('PowerShocker LGT-2500S PLUS','/product/powershocker-lgt-2500s-plus'),('קריותרפיה רפואית','/cryotherapy'),('מכשירים לקליניקות','/clinic-equipment'),('מיטה כירופרקטית Raphael','/chiropractic-beds')])
     og_product('מכשירי גלי הלם לקליניקה','ממוקדים ורדיאליים | Ultrawave · PowerShocker','tools/seo/src/'+[x for x in __import__('os').listdir('tools/seo/src') if '3075a8a23' in x][0],'og/shockwave-devices.jpg')
-    build(path,'shockwave-devices.html',title,desc,'og/shockwave-devices.jpg','מכשירי גלי הלם לקליניקה – איי גרופ',[crumbs('מכשירי גלי הלם לקליניקה',path),il,faqld(faq)],body)
+    build(path,'shockwave-devices.html',title,desc,'og/shockwave-devices.jpg','מכשירי גלי הלם לקליניקה – איי גרופ',[crumbs('מכשירי גלי הלם לקליניקה',path),il,faqld(faq),video_ld()],body)
 
     # ================= 2. chiropractic-beds =================
     path='/chiropractic-beds'

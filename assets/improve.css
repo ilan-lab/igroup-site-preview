@@ -243,3 +243,8 @@ nav a:has(>img){flex-shrink:0}
 @media (max-width:1023px){.blog-layout{grid-template-columns:1fr}.blog-aside{position:static}.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:767px){.blog-hero-grid{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}.blog-prose h2{font-size:1.3rem}}
 .blog-hero{padding-top:8rem!important}.blog-prose .blog-cta a.bg-primary,.blog-side-cta a.bg-primary{color:#fff!important}
+
+/* YouTube 16:9 embed (focused vs radial and similar) */
+.yt-embed{position:relative;width:100%;aspect-ratio:16/9;background:#0b1a2b}
+.yt-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.blog-prose .yt-video h2{margin-top:0}

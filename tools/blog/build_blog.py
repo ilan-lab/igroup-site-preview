@@ -2,6 +2,7 @@
 import re, json, html, sys, math
 sys.path.insert(0,'tools/seo')
 from nov26_pages import HEAD, FOOT, seo as _seo, crumbs, faqld, C, esc
+from youtube_video import video_ld, video_blog_block, TOC_LI, VIDEO_HEADING
 from make_og import product as og_product, generic as og_generic
 BASE='https://i-group.co.il'; DATE='2026-11-26'; DATE_HE='26.11.2026'
 LOGO_URL=BASE+'/assets/img/78c8016e_065b79d68_I-GroupNewLogo2.png'
@@ -123,6 +124,17 @@ for a in A:
 for a in A:
     md=open(f'tools/blog/a{a["n"]}.md',encoding='utf-8').read()
     blocks,toc=md2html(md)
+    if a['slug']=='focused-vs-radial-shockwave':
+        # after the two intro paragraphs, before the first h2
+        idx0=next(i for i,b in enumerate(blocks) if b.startswith('<h2'))
+        blocks.insert(idx0, video_blog_block())
+        toc.insert(0, ('video-focused-vs-radial', VIDEO_HEADING))
+    elif a['slug']=='what-is-shockwave-therapy':
+        # after section s2 (focused vs radial), before s3
+        idx=[i for i,b in enumerate(blocks) if b.startswith('<h2')]
+        # s3 is the 3rd h2 (0-index 2)
+        blocks.insert(idx[2], video_blog_block())
+        toc.insert(2, ('video-focused-vs-radial', VIDEO_HEADING))
     # mid-article CTA after 3rd h2 section
     idx=[i for i,b in enumerate(blocks) if b.startswith('<h2')]
     if len(idx)>3: blocks.insert(idx[3],cta(a))
@@ -147,7 +159,10 @@ for a in A:
     art={"@context":"https://schema.org","@type":"Article","headline":a['h1'],"description":a['desc'],"image":[BASE+'/'+og],"datePublished":DATE,"dateModified":DATE,
          "inLanguage":"he-IL","author":ORG,"publisher":ORG,"mainEntityOfPage":{"@type":"WebPage","@id":BASE+path},"keywords":a['kw'].replace(' · ',', '),"wordCount":a['words']}
     bc={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"דף הבית","item":BASE+"/"},{"@type":"ListItem","position":2,"name":"בלוג","item":BASE+"/blog/"},{"@type":"ListItem","position":3,"name":a['h1'],"item":BASE+path}]}
-    page(path,f'blog/{a["slug"]}.html',a['title'],a['desc'],og,a['h1']+' – איי גרופ',[art,bc,faqld(a['faq'])],body)
+    ld=[art,bc,faqld(a['faq'])]
+    if a['slug'] in ('focused-vs-radial-shockwave','what-is-shockwave-therapy'):
+        ld.append(video_ld())
+    page(path,f'blog/{a["slug"]}.html',a['title'],a['desc'],og,a['h1']+' – איי גרופ',ld,body)
 # ---- index ----
 og_generic('בלוג איי גרופ – מדריכים לטיפול ולקליניקות','og/blog.jpg')
 grp=lambda aud:''.join(card(a) for a in A if a['aud']==aud)
