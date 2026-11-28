@@ -28,7 +28,7 @@ def hero(h1,sub,lead,im,alt):
             f'<div class="relative rounded-2xl overflow-hidden border border-border/50 shadow-lg" style="background-color: rgb(232, 238, 245);"><img src="{im}" alt="{alt}" class="w-full aspect-[4/3] object-contain"></div>'
             f'<div><h1 class="text-3xl md:text-4xl font-bold mb-2" {T}>{h1}</h1><p class="text-lg font-medium mb-4" {T}>{sub}</p>'
             f'<p class="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">{lead}</p>'
-            '<div class="flex flex-wrap gap-3"><a href="tel:0549007723" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">חייג לייעוץ: 054-900-7723</a>'
+            '<div class="flex flex-wrap gap-3"><a href="tel:0509176111" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">עמירם: 050-917-6111</a><a href="tel:0549369742" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">אינה: 054-936-9742</a>'
             '<a href="phone-consultation.html" class="inline-flex items-center justify-center rounded-md text-sm font-medium border border-border h-9 px-4 py-2">קביעת שיחת ייעוץ</a></div></div></div></div></section>')
 U=lambda f:img(f)
 PAGES={
@@ -67,7 +67,7 @@ PAGES={
 }
 GEN=[('מה איי גרופ עושה?','איי גרופ (I-GROUP MEDICAL TEC LTD, ח.פ. 517296117) משווקת, מייבאת ומפיצה טכנולוגיות רפואיות מתקדמות לקליניקות, למרפאות ולמכוני שיקום בישראל.'),
 ('למי מיועדים המכשירים?','לפיזיותרפיסטים, אורתופדים, רופאי ספורט, כירופרקטורים, מכוני כאב ומרכזי שיקום. חלק מהמכשירים, כמו Biomag, מתאימים גם לשימוש ביתי.'),
-('אפשר לקבל הדגמה?','כן. ניתן לתאם שיחת ייעוץ והדגמה בטלפון 054-900-7723 או בעמוד קביעת שיחת הייעוץ.'),
+('אפשר לקבל הדגמה?','כן. ניתן לתאם שיחת ייעוץ והדגמה עם עמירם 050-917-6111 או אינה 054-936-9742, או בעמוד קביעת שיחת הייעוץ.'),
 ('איך בוחרים מכשיר לקליניקה?','כדאי להתחיל מסוג המטופלים והמצבים הנפוצים בקליניקה, מהמקום הפנוי ומהתקציב. בשיחת ייעוץ נעזור להשוות בין המכשירים הרלוונטיים.'),
 ('איפה נמצאים המשרדים?','משרדי איי גרופ נמצאים ברחוב מאיר אריאל 6, נתניה. הוראות הגעה מלאות מופיעות בעמוד ההגעה.')]
 if __name__=='__main__':

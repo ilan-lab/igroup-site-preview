@@ -59,7 +59,7 @@ def hero(h1,sub,lead,img,alt):
             f'<div class="relative rounded-2xl overflow-hidden border border-border/50 shadow-lg" style="background-color: rgb(232, 238, 245);"><img src="{img}" alt="{esc(alt)}" class="w-full aspect-[4/3] object-contain"></div>'
             f'<div><h1 class="text-3xl md:text-4xl font-bold mb-2" {C}>{h1}</h1><p class="text-lg font-medium mb-4" {C}>{sub}</p>'
             f'<p class="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">{lead}</p><div class="flex flex-wrap gap-3">'
-            '<a href="tel:0549007723" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">חייג לייעוץ: 054-900-7723</a>'
+            '<a href="tel:0509176111" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">עמירם: 050-917-6111</a><a href="tel:0549369742" class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2">אינה: 054-936-9742</a>'
             '<a href="/phone-consultation" class="inline-flex items-center justify-center rounded-md text-sm font-medium border border-border h-9 px-4 py-2">קביעת שיחת ייעוץ</a></div></div></div></div></section>')
 def faqsec(faq):
     items=''.join(f'<details class="bg-card rounded-xl border border-border/50 p-4"><summary class="font-semibold cursor-pointer" {C}>{q}</summary><p class="text-sm text-muted-foreground leading-relaxed mt-3">{a}</p></details>' for q,a in faq)
@@ -92,7 +92,7 @@ def main():
          ('איזה מכשיר גלי הלם מתאים לקליניקה שלי?','זה תלוי בסוג המטופלים: קליניקות שמטפלות בעיקר במבנים עמוקים ובנקודות מדויקות נוטות למכשיר ממוקד, וקליניקות עם עומס גבוה של פציעות גידים שטחיות, נקודות טריגר ואזורים רחבים נוטות למכשיר רדיאלי. רבות משלבות את שני הסוגים. צוות איי גרופ ישמח לעזור בהתאמה בשיחת ייעוץ.'),
          ('באילו מצבים משתמשים בגלי הלם בקליניקה?','בין ההתוויות המקובלות: דורבן (פלנטר פסיאיטיס), דלקת בגיד אכילס, טנדיניטיס בכתף ובגיד הסופרספינטוס, הסתיידות בכתף, מרפק טניס ומרפק גולף, טנדיניטיס פטלרי, תסמונת ה-IT band ונקודות טריגר. ההחלטה על טיפול מתקבלת על ידי איש מקצוע מוסמך.'),
          ('כמה טיפולים כוללת סדרה ומה משך הטיפול?','בדרך כלל סדרה של 3–5 טיפולים, וטיפול נמשך כ-5–15 דקות לאזור, בהתאם לאבחנה ולפרוטוקול שקבע המטפל.'),
-         ('כמה עולה מכשיר גלי הלם לקליניקה?','המחיר תלוי בדגם (ממוקד או רדיאלי), בתצורה ובאביזרים. לקבלת הצעת מחיר מותאמת לקליניקה התקשרו ל-054-900-7723.'),
+         ('כמה עולה מכשיר גלי הלם לקליניקה?','המחיר תלוי בדגם (ממוקד או רדיאלי), בתצורה ובאביזרים. לקבלת הצעת מחיר מותאמת לקליניקה התקשרו לעמירם 050-917-6111 או לאינה 054-936-9742.'),
          ('אפשר לקבל הדגמה לפני רכישה?','כן. ניתן לתאם שיחת ייעוץ והדגמה עם צוות איי גרופ. פרטי התצורה, ההדרכה, האחריות והשירות מפורטים בהצעת המחיר.')]
     items=[('Ultrawave LGT-2620','/product/ultrawave-lgt-2620'),('LGT-2520GP','https://focused.i-group.co.il/'),('PowerShocker LGT-2500S PLUS','/product/powershocker-lgt-2500s-plus')]
     il=itemlist([(n,u) for n,u in items if u.startswith('/')])
@@ -140,7 +140,7 @@ def main():
          ('כמה מקום צריך בקליניקה?','לפי היצרן, מומלץ חלל של כ-3–3.5 מטר אורך ו-1.2–1.5 מטר רוחב סביב המיטה, כדי לאפשר תנועה חופשית של המטפל.'),
          ('האם המיטה מתאימה למטפל שמתחיל לעבוד בטכניקות דרופ ופלקסיה?','היצרן מציין שהדרופ החשמלי ב-707 מייצר כוח ותזמון קבועים ומפחית את התלות בכוח הידיים של המטפל. הדרכה על המיטה ניתנת עם ההתקנה.'),
          ('מי היצרן?','המיטות מיוצרות על ידי Young Il M (01M) מקוריאה, יצרנית ציוד לטיפול בעמוד השדרה. לפי היצרן, Raphael 707 רשומה ב-FDA ובעלת אישור CE, ו-Raphael 606 רשומה ב-FDA.'),
-         ('כמה עולה מיטה כירופרקטית?','המחיר תלוי בדגם, בצבע ובאביזרים הנלווים. לקבלת הצעת מחיר מותאמת התקשרו ל-054-900-7723.')]
+         ('כמה עולה מיטה כירופרקטית?','המחיר תלוי בדגם, בצבע ובאביזרים הנלווים. לקבלת הצעת מחיר מותאמת התקשרו לעמירם 050-917-6111 או לאינה 054-936-9742.')]
     body=hero('מיטה כירופרקטית Raphael','לשיקום הגב',
       'מיטות כירופרקטיות מסדרת Raphael של היצרן הקוריאני Young Il M (01M), לטיפול ידני בעמוד השדרה בקליניקות פיזיותרפיה, כירופרקטיקה, אורתופדיה ומרפאות כאב. שני דגמים: <strong>Raphael 707</strong> – מערכת משולבת של דרופ חשמלי, פלקסיה אוטומטית, מתיחה צירית וגובה חשמלי עם מסך מגע; ו-<strong>Raphael 606</strong> – מיטה בטכניקת פלקסיה-דיסטרקציה בשיטת Leander עם דרופ אוטומטי ב-3 מקטעים.',
       IMG_707,'מיטה כירופרקטית Raphael 707 לשיקום הגב')
