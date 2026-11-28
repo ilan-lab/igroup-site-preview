@@ -20,6 +20,9 @@ TikTok: https://www.tiktok.com/@i_group_medical
 
 I-Group is the exclusive importer of Longest Medical in Israel (shockwave, cryotherapy and RehaMoto kinesiotherapy devices). It also markets and imports to Israel spinal decompression systems (Spine-MT / Spine MT Core and Therapy Master), Biomag magnetotherapy, Raphael chiropractic tables, and related clinic equipment.
 
+Official importer status (per I-Group site content): I-Group Medical Tech is the official and exclusive importer of Longest in Israel (shockwave devices Ultrawave LGT-2620, LGT-2520GP, PowerShocker LGT-2500S PLUS; LGT-2410S cryotherapy; RehaMoto LGT-5100D / 5100P), with local warranty and service. For Spine-MT, Spine MT Core, Therapy Master, Biomag, Raphael chiropractic tables (model 707), the robotic therapy bed and SonNext ultrasound, I-Group is the importer and distributor in Israel, with local warranty and service.
+Raphael 707: a chiropractic table for back rehabilitation (motorized drop, automatic flexion up to 22.4 degrees, axial traction up to 10 cm, lateral flexion, electric height 59-89 cm, 10-inch touch screen), made by Young Il M (01M), Korea. Page: https://i-group.co.il/product/raphael-707
+
 ## עברית
 שם: איי גרופ (I-Group Medical Tech)
 שם משפטי: I-GROUP MEDICAL TEC LTD
@@ -29,7 +32,7 @@ I-Group is the exclusive importer of Longest Medical in Israel (shockwave, cryot
 שעות פעילות: א׳–ה׳ 09:00–18:00
 אתר: https://i-group.co.il/
 
-איי גרופ היא היבואנית הבלעדית של Longest בישראל (מכשירי גלי הלם, קריותרפיה וקינסיותרפיה RehaMoto). החברה גם משווקת ומייבאת לישראל מערכות דקומפרסיה לעמוד השדרה (Spine-MT / Spine MT Core ו-Therapy Master), מכשירי מגנטותרפיה Biomag, מיטות כירופרקטיות Raphael וציוד נלווה לקליניקות.
+איי גרופ היא היבואנית הרשמית והבלעדית של Longest בישראל (מכשירי גלי הלם, קריותרפיה וקינסיותרפיה RehaMoto), עם אחריות ושירות מקומיים. החברה גם משווקת ומייבאת לישראל מערכות דקומפרסיה לעמוד השדרה (Spine-MT / Spine MT Core ו-Therapy Master), מכשירי מגנטותרפיה Biomag, מיטות כירופרקטיות Raphael וציוד נלווה לקליניקות.
 
 ## מוצרים עיקריים / Key products
 - Spine-MT — מכשיר דקומפרסיה ממוחשבת לעמוד השדרה: https://i-group.co.il/product/spine-mt
@@ -40,7 +43,8 @@ I-Group is the exclusive importer of Longest Medical in Israel (shockwave, cryot
 - PowerShocker LGT-2500S PLUS — גלי הלם רדיאליים (Longest): https://i-group.co.il/product/powershocker-lgt-2500s-plus
 - Biomag Lumina 3D-e — מגנטותרפיה פולסטית: https://i-group.co.il/product/biomag-lumina
 - LGT-2410S — קריותרפיה ממוקדת CO₂ (Longest): https://i-group.co.il/product/lgt-2410s
-- Raphael 707 / 606 — מיטה כירופרקטית לשיקום הגב: https://i-group.co.il/chiropractic-beds
+- Raphael 707 — מיטה כירופרקטית לשיקום הגב (דרופ מוטורי, פלקסיה אוטומטית, מתיחה צירית, מסך מגע): https://i-group.co.il/product/raphael-707
+- Raphael 707 / 606 — סדרת מיטות כירופרקטיות Raphael: https://i-group.co.il/chiropractic-beds
 - RehaMoto — מאמנים אקטיביים-פסיביים (Longest): https://i-group.co.il/kin
 
 ## עמודים חשובים / Key pages
@@ -50,6 +54,7 @@ I-Group is the exclusive importer of Longest Medical in Israel (shockwave, cryot
 - טיפול בגלי הלם: https://i-group.co.il/shockwave-therapy
 - מגנטותרפיה: https://i-group.co.il/magnetotherapy
 - קריותרפיה: https://i-group.co.il/cryotherapy
+- מיטה כירופרקטית Raphael 707: https://i-group.co.il/product/raphael-707
 - ציוד לקליניקה: https://i-group.co.il/clinic-equipment
 - הוראות הגעה: https://i-group.co.il/address
 - בלוג: https://i-group.co.il/blog/
